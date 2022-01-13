@@ -47,28 +47,48 @@
         <h2 class="section-title hidden">Наши преимущества</h2>
         <!--Скрыть этот заголовок-->
         <ul class="features list">
-          <li class="features-item icon-antenna">
+          <li class="features-item">
+            <div class="features-picture">
+              <svg width="70" height="70">
+                <use href="./images/sprite.svg#antenna"></use>
+              </svg>
+            </div>
             <h3 class="features-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
             <p class="features-text"> Идейные соображения, а также
               начало повседневной работы по
               формированию позиций.
             </p>
           </li>
-          <li class="features-item icon-clock">
+          <li class="features-item">
+            <div class="features-picture">
+              <svg width="70" height="70">
+                <use href="./images/sprite.svg#clock"></use>
+              </svg>
+            </div>
             <h3 class="features-title">ПУНКТУАЛЬНОСТЬ</h3>
             <p class="features-text"> Задача организации, в особенности
               же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="features-item icon-diagram">
+          <li class="features-item">
+            <div class="features-picture">
+              <svg width="70" height="70">
+                <use href="./images/sprite.svg#diagram"></use>
+              </svg>
+            </div>
             <h3 class="features-title">ПЛАНИРОВАНИЕ</h3>
             <p class="features-text"> Равным образом консультация с
               широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li class="features-item icon-astronaut">
+          <li class="features-item">
+            <div class="features-picture">
+              <svg width="70" height="70">
+                <use href="./images/sprite.svg#astronaut"></use>
+              </svg>
+            </div>
             <h3 class="features-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
             <p class="features-text"> Значимость этих проблем настолько
               очевидна, что реализация плановых
@@ -105,6 +125,24 @@
             <div class="person-discription">
               <h3 class="person-name">Игорь Демьяненко</h3>
               <p class="person-proffesion">Product Designer</p>
+              <ul class="person-sociallinks list">
+                <li class="social-link-item">
+                  <a class="social-link" href="">
+                    <svg class="social-link-icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-link-item">
+                  <a class="social-link" href="">
+                    <svg class="social-link-icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-link-item"><a class="social-link" href=""></a></li>
+                <li class="social-link-item"><a class="social-link" href=""></a></li>
+              </ul> 
             </div>
           </li>
           <li class="item">
@@ -131,20 +169,45 @@
         </ul>
       </div>
     </section>
+    <!-- Наши клиенты -->
+    <section class="section clients">
+      <div class="container">
+        <h2 class="section-title">Наши клиенты</h2>
+        <ul class="clients list">
+          <li class="clients-item"><a href="" class="clients-link"></a></li>
+          <li class="clients-item"><a href="" class="clients-link"></a></li>
+          <li class="clients-item"><a href="" class="clients-link"></a></li>
+          <li class="clients-item"><a href="" class="clients-link"></a></li>
+          <li class="clients-item"><a href="" class="clients-link"></a></li>
+          <li class="clients-item"><a href="" class="clients-link"></a></li>
+        </ul>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
-      <a href="./index.html" class="logo">Web<span class="logo-decor-footer">Studio</span></a>
-      <address>
-        <ul class="address-list">
-          <li class="address-item"><a href="https://goo.gl/maps/SoTXHpnCSXKtqmoF6" class="address-link" target="_blank"
-              rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li class="address-item"><a href="mailto:info@example.com" class="address-link contact">info@example.com</a>
-          </li>
-          <li class="address-item"><a href="tel:+380991111111" class="address-link contact">+38 099 111 11 11</a>
-          </li>
+      <div>
+        <a href="./index.html" class="logo">Web<span class="logo-decor-footer">Studio</span></a>
+        <address>
+          <ul class="address-list">
+            <li class="address-item"><a href="https://goo.gl/maps/SoTXHpnCSXKtqmoF6" class="address-link" target="_blank"
+                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li class="address-item"><a href="mailto:info@example.com" class="address-link contact">info@example.com</a>
+            </li>
+            <li class="address-item"><a href="tel:+380991111111" class="address-link contact">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="join">
+        <h3 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+        <ul class="list join-list">
+          <li class="join-item"><a href="">instagram</a></li>
+          <li class="join-item"><a href="">twitter</a></li>
+          <li class="join-item"><a href="">facebook</a></li>
+          <li class="join-item"><a href="">linkedin</a></li>
         </ul>
-      </address>
+      </div>
     </div>
   </footer>
 </body>

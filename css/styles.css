@@ -180,6 +180,8 @@ ul .link.current {
   color: var(--title-text-color);
   text-align: center;
 }
+
+/* Наши преимущества */
 .features-section {
   padding-bottom: 0;
 }
@@ -189,7 +191,7 @@ ul .link.current {
 .features-item + .features-item {
   margin-left: 30px;
 }
-.features-item::before {
+/* .features-item::before {
   content: "";
   display: block;
   height: 120px;
@@ -197,19 +199,20 @@ ul .link.current {
   background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--second-bg-color);
-}
-.icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-.icon-clock::before {
-  background-image: url();
-}
-.icon-diagram::before {
-  background-image: url();
-}
-.icon-astronaut::before {
-  background-image: url();
+} */
+/* .icon-antenna::before {
+  background-image: url(../images/svg/antenna.svg);
+  background-size: auto;
+} */
+.features-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--second-bg-color);
 }
 .features-title {
   margin-top: 0;
@@ -224,16 +227,17 @@ ul .link.current {
   font-size: 14px;
   line-height: 1.71;
 }
-/* .activity .item {
-  width: calc((100%-2*30px) / 3);
-} */
+/* Чем мы занимаемся */
 .activity .item:not(:last-child) {
   margin-right: 30px;
 }
 
-/* .person .item {
-  width: calc((100%-3*30px) / 4);
-} */
+/* Наша команда */
+.person .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .person .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -259,6 +263,24 @@ ul .link.current {
   background-color: var(--second-bg-color);
   text-align: center;
 }
+.person-sociallinks {
+  margin-top: 16px;
+  justify-content: center;
+}
+.person-sociallinks .social-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+/* .social-link-icon {
+} */
 
 /* Страница портфолио */
 /* Кнопки страницы портфолио */
@@ -301,6 +323,11 @@ ul .link.current {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.work-item:hover,
+.work-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .work-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -338,6 +365,10 @@ ul .link.current {
   padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
 .footer .logo {
   padding-top: 0;
   padding-bottom: 0;
@@ -369,7 +400,21 @@ ul .link.current {
 .contact {
   color: rgba(255, 255, 255, 0.6);
 }
+.join {
+  margin-left: 70px;
+}
+.join-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--dark-bg-text-color);
+}
 
+.join-list {
+  margin-top: 20px;
+}
 /* Прячет то, что нужно спрятать :) */
 .hidden {
   position: absolute;
