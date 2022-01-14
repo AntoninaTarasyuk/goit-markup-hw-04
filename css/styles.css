@@ -107,10 +107,15 @@ ul .link.current {
   margin-left: 50px;
 }
 .contacts-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+}
+.contacts-link-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 .contacts-nav .link:focus,
 .contacts-nav .link:hover {
@@ -277,10 +282,18 @@ ul .link.current {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: #afb1b8;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--dark-bg-text-color);
   background-color: var(--accent-color);
 }
-/* .social-link-icon {
-} */
+.social-link-icon {
+  fill: currentColor;
+}
+
+/* Наши клиенты */
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -299,8 +312,15 @@ ul .link.current {
   align-items: center;
   width: 106px;
   height: 60px;
+  color: #afb1b8;
 }
-
+.clients-link-icon {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+}
 /* Страница портфолио */
 /* Кнопки страницы портфолио */
 .filter-item:not(:last-child) {
@@ -436,12 +456,13 @@ ul .link.current {
 .join-item:not(:last-child) {
   margin-right: 10px;
 }
-.join-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.join-item .social-link {
+  color: var(--dark-bg-text-color);
   background-color: rgba(255, 255, 255, 0.1);
+}
+.join-item .social-link:hover,
+.join-item .social-link:focus {
+  background-color: var(--accent-color);
 }
 /* Прячет то, что нужно спрятать :) */
 .hidden {
