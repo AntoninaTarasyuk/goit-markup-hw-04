@@ -345,6 +345,7 @@ ul .link.current {
   margin-bottom: 0;
 }
 .work-link {
+  display: block;
   text-decoration: none;
 }
 .work-link:hover,
