@@ -267,7 +267,7 @@ ul .link.current {
   margin-top: 16px;
   justify-content: center;
 }
-.person-sociallinks .social-link-item:not(:last-child) {
+.social-link-item:not(:last-child) {
   margin-right: 10px;
 }
 .social-link {
@@ -281,6 +281,25 @@ ul .link.current {
 }
 /* .social-link-icon {
 } */
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 60px;
+}
 
 /* Страница портфолио */
 /* Кнопки страницы портфолио */
@@ -411,9 +430,18 @@ ul .link.current {
   letter-spacing: 0.03em;
   color: var(--dark-bg-text-color);
 }
-
 .join-list {
   margin-top: 20px;
+}
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+.join-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* Прячет то, что нужно спрятать :) */
 .hidden {
