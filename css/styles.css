@@ -165,6 +165,10 @@ ul .link.current {
 
   cursor: pointer;
 }
+.banner-btn:hover,
+.banner-btn:focus {
+  background-color: #188ce8;
+}
 
 /* Секции */
 .section {
@@ -230,6 +234,8 @@ ul .link.current {
 .person-discription {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primary-bg-color);
+  border-radius: 0px 0px 4px 4px;
 }
 .person-name {
   margin-top: 0;
